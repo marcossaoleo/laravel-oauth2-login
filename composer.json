@@ -19,7 +19,7 @@
     "homepage": "https://github.com/marcossaoleo/laravel-oauth2-login",
     "require": {
         "php": "^8.2",
-        "illuminate/support": "^8.0|^9.0|^10.0",
+        "illuminate/support": "^11.0",
         "league/oauth2-client": "^2.0"
     },
     "require-dev": {
