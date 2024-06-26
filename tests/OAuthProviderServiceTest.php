@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use Kronthto\LaravelOAuth2Login\OAuthProvider;
-use Kronthto\LaravelOAuth2Login\OAuthProviderService;
+use Marcossaoleo\LaravelOAuth2Login\OAuthProvider;
+use Marcossaoleo\LaravelOAuth2Login\OAuthProviderService;
 use League\OAuth2\Client\Token\AccessToken;
 
 class OAuthProviderServiceTest extends TestCase

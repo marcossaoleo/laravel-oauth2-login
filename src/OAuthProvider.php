@@ -1,6 +1,6 @@
 <?php
 
-namespace Kronthto\LaravelOAuth2Login;
+namespace Marcossaoleo\LaravelOAuth2Login;
 
 use League\OAuth2\Client\Provider\GenericProvider;
 
@@ -10,7 +10,7 @@ class OAuthProvider extends GenericProvider
     {
         return array_merge(parent::getDefaultHeaders(), [
             'Accept' => 'application/json',
-            'User-Agent' => config('app.name', 'kronthto/laravel-oauth2-login'),
+            'User-Agent' => config('app.name', 'marcossaoleo/laravel-oauth2-login'),
         ]);
     }
 }

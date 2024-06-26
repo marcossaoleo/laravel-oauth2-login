@@ -18,18 +18,18 @@ You could describe it as a bridge between Laravel and [league/oauth2-client](htt
 
 ## Install
 
-* Using composer: `$ composer require kronthto/laravel-oauth2-login`
-* Register the service provider (Auto-Discovery enabled): `Kronthto\LaravelOAuth2Login\ServiceProvider`
-* Publish the config file: `$ artisan vendor:publish --provider="Kronthto\LaravelOAuth2Login\ServiceProvider"`
+* Using composer: `$ composer require marcossaoleo/laravel-oauth2-login`
+* Register the service provider (Auto-Discovery enabled): `Marcossaoleo\LaravelOAuth2Login\ServiceProvider`
+* Publish the config file: `$ artisan vendor:publish --provider="Marcossaoleo\LaravelOAuth2Login\ServiceProvider"`
 * Put the credentials of your OAuth Provider in the published config
 
 ## Usage
 
-Add the `Kronthto\LaravelOAuth2Login\CheckOAuth2` middleware to the routes (-groups) you want to protect.
+Add the `Marcossaoleo\LaravelOAuth2Login\CheckOAuth2` middleware to the routes (-groups) you want to protect.
 
 **Bear in mind that this only ensures that some user is logged in**, if you require further authorization checks those will still have to be implemented. This package stores the resource owner info as an Request-attribute to enable you to do so.
 
-This redirects unauthenticated users. If on some routes you only want to check whether a session by this package exists (for instance to display a login/logout button in your template) use `Kronthto\LaravelOAuth2Login\OnlyCheckOAuth`.
+This redirects unauthenticated users. If on some routes you only want to check whether a session by this package exists (for instance to display a login/logout button in your template) use `Marcossaoleo\LaravelOAuth2Login\OnlyCheckOAuth`.
 It will also refresh tokens and pull up to date resource owner data, but never redirect. On failure it just doesn't set the Request attribute.
 
 ### `Auth` guard
@@ -60,9 +60,9 @@ Please see the [CHANGELOG](CHANGELOG.md) for more information on what has change
 The MIT License (MIT). Please see the [License File](LICENSE.md) for more information.
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-githubversion]: https://badge.fury.io/gh/kronthto%2Flaravel-oauth2-login.svg
-[ico-build]: https://travis-ci.org/kronthto/laravel-oauth2-login.svg?branch=master
+[ico-githubversion]: https://badge.fury.io/gh/marcossaoleo%2Flaravel-oauth2-login.svg
+[ico-build]: https://travis-ci.org/marcossaoleo/laravel-oauth2-login.svg?branch=master
 
-[link-releases]: https://github.com/kronthto/laravel-oauth2-login/releases
+[link-releases]: https://github.com/marcossaoleo/laravel-oauth2-login/releases
 [link-contributors]: ../../contributors
-[link-build]: https://travis-ci.org/kronthto/laravel-oauth2-login
+[link-build]: https://travis-ci.org/marcossaoleo/laravel-oauth2-login

@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kronthto\\LaravelOAuth2Login\\": "src/"
+            "Marcossaoleo\\LaravelOAuth2Login\\": "src/"
         }
     },
     "autoload-dev": {
@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kronthto\\LaravelOAuth2Login\\ServiceProvider"
+                "Marcossaoleo\\LaravelOAuth2Login\\ServiceProvider"
             ]
         }
     },

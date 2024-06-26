@@ -1,6 +1,6 @@
 <?php
 
-namespace Kronthto\LaravelOAuth2Login;
+namespace Marcossaoleo\LaravelOAuth2Login;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kronthto\LaravelOAuth2Login;
+namespace Marcossaoleo\LaravelOAuth2Login;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;

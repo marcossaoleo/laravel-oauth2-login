@@ -4,7 +4,7 @@ namespace Tests;
 
 use Illuminate\Foundation\Testing\Concerns\InteractsWithSession;
 use Illuminate\Routing\Router;
-use Kronthto\LaravelOAuth2Login\CheckOAuth2;
+use Marcossaoleo\LaravelOAuth2Login\CheckOAuth2;
 
 class GlobalMiddlewareTest extends TestCase
 {

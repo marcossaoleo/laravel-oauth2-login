@@ -8,7 +8,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function getPackageProviders($app)
     {
-        return [\Kronthto\LaravelOAuth2Login\ServiceProvider::class];
+        return [\Marcossaoleo\LaravelOAuth2Login\ServiceProvider::class];
     }
 
     protected function resolveApplicationConfiguration($app)

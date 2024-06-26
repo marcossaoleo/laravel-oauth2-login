@@ -5,8 +5,8 @@ namespace Tests;
 use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Router;
-use Kronthto\LaravelOAuth2Login\OAuthProvider;
-use Kronthto\LaravelOAuth2Login\OAuthProviderService;
+use Marcossaoleo\LaravelOAuth2Login\OAuthProvider;
+use Marcossaoleo\LaravelOAuth2Login\OAuthProviderService;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 
@@ -14,7 +14,7 @@ class CheckOnlyMiddlewareTest extends MiddlewareTest
 {
     protected function addWebRoutes(Router $router)
     {
-        $router->group(['middleware' => \Kronthto\LaravelOAuth2Login\OnlyCheckOAuth::class], function (Router $router) {
+        $router->group(['middleware' => \Marcossaoleo\LaravelOAuth2Login\OnlyCheckOAuth::class], function (Router $router) {
             $router->get('web/ping', [
                 'as' => 'web.ping',
                 'uses' => function () {

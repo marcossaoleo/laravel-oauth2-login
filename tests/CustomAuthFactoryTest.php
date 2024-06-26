@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Kronthto\LaravelOAuth2Login\OAuthProviderService;
+use Marcossaoleo\LaravelOAuth2Login\OAuthProviderService;
 use League\OAuth2\Client\Provider\GenericResourceOwner;
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 use League\OAuth2\Client\Token\AccessToken;

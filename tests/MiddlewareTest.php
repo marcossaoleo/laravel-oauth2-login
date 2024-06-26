@@ -7,8 +7,8 @@ use GuzzleHttp\Psr7\Query;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithSession;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Router;
-use Kronthto\LaravelOAuth2Login\OAuthProvider;
-use Kronthto\LaravelOAuth2Login\OAuthProviderService;
+use Marcossaoleo\LaravelOAuth2Login\OAuthProvider;
+use Marcossaoleo\LaravelOAuth2Login\OAuthProviderService;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Provider\GenericResourceOwner;
 use League\OAuth2\Client\Token\AccessToken;
@@ -27,7 +27,7 @@ class MiddlewareTest extends TestCase
 
     protected function addWebRoutes(Router $router)
     {
-        $router->group(['middleware' => \Kronthto\LaravelOAuth2Login\CheckOAuth2::class], function (Router $router) {
+        $router->group(['middleware' => \Marcossaoleo\LaravelOAuth2Login\CheckOAuth2::class], function (Router $router) {
             parent::addWebRoutes($router);
             $router->get('web/email', [
                 'as' => 'web.email',
